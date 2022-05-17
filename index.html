@@ -6,63 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+
+    <div class="grid-container">
+        <header>
+            <button>Search</button>
+            <input type="text">
+            <img src="./images/home.png" alt="">
+            <img src="./images/cebra.png" alt="cebra">
+            <div>Ever Vino</div>
+        </header>
+        <sidebar>
+            <div class="logo-part">
+                <img src="./images/wall.png" alt="logo">
+                <p>Dashboard</p>
+            </div>
+            <br>
+            <ul>
+                <li><img src="./images/home.png" alt="home">Home</li>
+                <li><img src="./images/account.png" alt="account">Profile</li>
+                <li><img src="./images/message-text-outline.png" alt="Messages">Messages</li>
+                <li><img src="./images/clock-time-four.png" alt="History">History</li>
+                <li><img src="./images/dock-window.png" alt="Tasks">Tasks</li>
+                <li><img src="./images/account-group.png" alt="Community">Communities</li>
+            </ul>
+            <br>
+            <ul>
+                <li><img src="./images/cog.png" alt="Settings">Settings</img></li>
+                <li><img src="./images/help-box.png" alt="Help">Support</img></li>
+                <li><img src="./images/shield-check.png" alt="Privacy">Privacy</img></li>
+            </ul>
+        </sidebar>
         
+        <nav>
+            <img src="./images/cebra.png" alt="cebra">
+            <div>
+                <p>Hi there</p>
+                <p>Ever Vino (@EverVino)</p>
+            </div>
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+        </nav>
+        <div class="main-content">
 
-        <button><img src="./images/oso" alt=""></button>
-        <input type="text">
-        <img src="./images/home.png" alt="">
-        <img src="./images/cebra.png" alt="cebra">
-        <div>Ever Vino</div>
-    </header>
-    <sidebar>
-
-        <ul>
-            <li>
-                <img src="/images/home.png" alt="home">Home</img>
-                <img src="./images/account.png" alt="account">Profile</img>
-                <img src="./images/message-text-outline.png" alt="Messages">Messages</img>
-                <img src="./images/clock-time-four.png" alt="History">History</img>
-                <img src="./images/file-document-multiple.png" alt="Tasks">Tasks</img>
-                <img src="./images/account-group.png" alt="Community">Communities</img>
-            </li>
-        </ul>
-
-        
-        <br>
-
-        <ul>
-            Settings 
-            Support 
-            Privacy
-        </ul> 
-    </sidebar>
-    
-    <nav>
-        <img src="./images/cebra.png" alt="cebra">
-        <div>
-            <p>Hi there</p>
-            <p>Ever Vino (@EverVino)</p>
-        </div>
-        <button>New</button>
-        <button>Upload</button>
-        <button>Share</button>
-    </nav>
-
-    <div class="main-content">
-        <div class="articles">
-
-        </div>
-        <div class="left-container">
-
+            <div class="articles">
+                <p>Your projects</p>
+                <div class="articles-container">
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="left-container">
+                <p class="title2">Announcements</p>
+                <div class="card-anouncement">
+                    <p class="title3">Article Title</p>
+                    <p class="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                </div>
+                <div class="card-anouncement">
+                    <p class="title3">Article Title</p>
+                    <p class="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                </div>
+                <div class="card-anouncement">
+                    <p class="title3">Article Title</p>
+                    <p class="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                </div>
+                <p class="title2">Trending</p>
+                <div class="trend">
+                    <img src="./images/oso.png" alt="oso">
+                    <div class="card-contact">
+                        <p class="title-contact">@oso</p>
+                        <p>honey eater</p>
+                    </div>
+                    <img src="./images/perro.png" alt="perro">
+                    <div class="card-contact">
+                        <p class="title-contact">@perro</p>
+                        <p>friendly animal</p>
+                    </div>
+                    <img src="./images/jirafa.png" alt="jirafa">
+                    <div class="card-contact">
+                        <p class="title-contact">@jirafa</p>
+                        <p>tall influencer</p>
+                    </div>
+                    <img src="./images/rino.png" alt="rino">
+                    <div class="card-contact">
+                        <p class="title-contact">@rino</p>
+                        <p>former unicorn</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     
     
 
-    <a href='https://www.freepik.com/vectors/animal-face'>Animal face vector created by freepik - www.freepik.com</a>
+    <!-- <a href='https://www.freepik.com/vectors/animal-face'>Animal face vector created by freepik - www.freepik.com</a> -->
 </body>
 </html>
