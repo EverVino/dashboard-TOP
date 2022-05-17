@@ -1,6 +1,6 @@
 *{
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');   
-    border: 1px solid red;
+    /*border: solid 1px red;*/
     font-family: 'Roboto', sans-serif;
 
 }
@@ -12,16 +12,19 @@ li {
     grid-template-columns: auto 1fr;
     align-items: center;
     justify-content: left;
+    font-size: larger;
 }
 
 li>img {
     width:30px;
     margin-right: 1rem;
+    margin:1rem;
+    
 
 }
 ul {
     list-style-type: none;
-    padding: 8px;
+    padding: 1rem;
     
 
 }
@@ -47,14 +50,35 @@ ul {
 header{
     grid-column: 2 / span 1;
     display: grid;
-    grid-template-columns: 1fr auto 1fr 1fr 2fr;/*repeat(5, 1fr);*/
+    grid-auto-flow: column;
     align-items: center;
-    justify-content: space-around;
-    margin: 10px;
+    
+    grid-template-columns: auto 2fr 1fr auto auto auto;
+    gap:2rem;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    background-color: #F2F2F2;
+}
+header p{
+    font-weight: bold;
+    font-size: large;
+}
+header input {
+    border-radius: 1rem;
+    
+
+}
+.search {
+    background-image: url(./images/magnify.png);
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    
 }
 header>img {
-    width:50px;
-    height: 50px;
+    width:40px;
+    height: 40px;
 }
 
 sidebar{
@@ -62,65 +86,126 @@ sidebar{
     background-color: #1D2F40;
     color:white;
     font-weight: bold;
+    padding: 1rem;
     
 }
 
 nav{
     display: grid;
     grid-auto-flow: column;
+    justify-content: left;
     align-items: center;
-    justify-content: space-around;
+    font-weight: bold;
+    font-size: large;
+    padding: 1rem 3rem;
     gap:10px;
+    grid-template-columns: auto auto 1fr auto auto;
+    background-color: #F2F2F2;
 }
-
+nav>div {
+   
+}
+nav>div>p{
+    margin:0;
+}
+nav>div>p.hi{
+    font-size: small;
+}
 nav>img {
     width: 80px;
     height: 80px;
+    border-radius: 50%;
+    
 }
 
+nav>button{
+    padding:0.5rem;
+    border-radius: 1rem;
+    width: 100px;
+    font-size:medium;
+    font-weight: bold;
+    background-color: #1D2F40;
+    color:white;
+
+}
 .main-content{
     display: grid;
     grid-template-columns:3fr 1fr  ;
-    padding: 8px;
-    gap:8px;
+    padding: 1rem;
+    
     background-color: #51768C;
 }
 
 .articles-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap:8px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:1rem;
+    margin:1.5rem;
 }
 
 .card{
-    background-color: #A6807C;
-    border-left: 5px solid #1D2F40;
+    background-color: #c2bbba;
+    border-left: 10px solid #1D2F40;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .left-container {
     display: grid;
+    padding: 20px;
 
 }
-.card-anouncement{
+
+.card-container{
+    border-radius: 1rem;
     background-color: white;
+    padding: 1.5rem;
+}
+.card-anouncement{
+    
+    padding: 8px;
+    
+}
+.card>p{
+    margin:0;
+}
+.title{
+    font-weight: bold;
+    font-size: large;
+}
+.title3 {
+    font-weight: bold;
+    
+}
+.card-anouncement>p {
+    margin:0;
 }
 .trend {
     display:grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: auto auto;
     align-items: center;
-    padding: 8px;
+    justify-content: left;
+
+    padding: 1.5rem 1.5rem 1.5rem 15%;
     background-color: white;
+    font-size: medium;
+    gap:10px;
+    border-radius:1rem;
+    
 
 }
 
 .trend>img{
-    width:50px;
-    height: 50px;
+    width:60px;
+    height: 60px;
     justify-self:end;
+    border-radius: 50%;
 }
 
+.title-contact{
+
+    font-weight: bold;
+}
 .card-contact {
     display: grid;
     grid-template-columns: 1fr;
@@ -131,6 +216,23 @@ nav>img {
 .card-contact p {
     margin:0;
 }
+
+.title2 {
+    font-weight: bold;
+}
+
+.article-icons {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    gap:7px;
+}
+.article-icons>img {
+    width: 25px;
+    margin-top: 0.8rem;
+ 
+}
+
 /*
 #1D2F40 azul
 azul claro #51768C
