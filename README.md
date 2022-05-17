@@ -1,2 +1,2 @@
 # dashboard-TOP
-An exaple of dashboard
+An example of dashboard
